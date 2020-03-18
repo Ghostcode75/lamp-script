@@ -39,4 +39,6 @@ php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 php -r "unlink('composer-setup.php');"
 composer self-update
 
+usermod -a -G www-data $user
+echo "logout and back in to enable changes"
 
